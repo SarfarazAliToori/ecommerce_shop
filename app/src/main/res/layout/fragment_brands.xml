@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.brands.BrandsFragment">
+
+    <include
+        android:id="@+id/fragment_brands_promotion_banner_iv"
+        layout="@layout/promotions_banner"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_brands_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="10"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/brands_itme_view"
+        />
+
+</LinearLayout>

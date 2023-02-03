@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/signInFragment2">
+
+    <fragment
+        android:id="@+id/signInFragment2"
+        android:name="com.acclivousbyte.shopee.view.fragments.signIn.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment2" />
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment2"
+        android:name="com.acclivousbyte.shopee.view.fragments.signUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment2"
+        android:name="com.acclivousbyte.shopee.view.fragments.forgotPassword.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+</navigation>

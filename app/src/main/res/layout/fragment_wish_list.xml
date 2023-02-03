@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.wishlist.WishListFragment">
+
+    <include
+        layout="@layout/promotions_banner"
+        android:id="@+id/fragment_wish_list_ads_id"/>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/fragment_wish_list_recycler_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:listitem="@layout/products_items_view"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="You have no products in your list."-->
+<!--        android:textSize="@dimen/_16sdp"-->
+<!--        />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_wish_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/products_items_view"/>
+
+        <TextView
+            android:id="@+id/fragment_wish_list_message_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="You have no products in your list."
+            android:textSize="@dimen/_18sdp"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:fontFamily="@font/open_sans_semibold"
+            tools:visibility="visible"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

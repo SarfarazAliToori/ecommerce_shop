@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/red">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/fragment_profile_back_iv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:src="@drawable/md_nav_back"/>-->
+
+        <TextView
+            android:id="@+id/fragment_profile_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_weight="@integer/material_motion_duration_short_1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/fragment_profile_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+    <include
+        layout="@layout/promotions_banner"
+        android:id="@+id/fragment_profile_ads_banner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:fontFamily="@font/open_sans_regular"
+            android:textSize="@dimen/_16sdp"
+            android:text="@string/name1" />
+
+        <EditText
+            android:id="@+id/fragment_profile_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/shopee_black"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="text"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/jawad" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/full_name1" />
+
+        <EditText
+            android:id="@+id/fragment_profile_secondName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/shopee_black"
+            android:fontFamily="@font/open_sans_semibold"
+            android:inputType="text"
+            android:backgroundTint="@color/red"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/aslam" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/email1" />
+
+        <EditText
+            android:id="@+id/fragment_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/shopee_black"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/jawad_autofit_com" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/phone1" />
+
+        <EditText
+            android:id="@+id/fragment_profile_phoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/shopee_black"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="number"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/_091348388" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/address1" />
+
+        <EditText
+            android:id="@+id/fragment_profile_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/shopee_black"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="textPostalAddress"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/house_611_abc_road_lahore" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_marginTop="20dp"
+            android:text="@string/reference_name" />
+
+        <EditText
+            android:id="@+id/fragment_profile_referenceName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/shopee_black"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="text"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/ali" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

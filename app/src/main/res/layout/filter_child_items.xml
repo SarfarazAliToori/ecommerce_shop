@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@+id/filter_child_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/filter_child_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shopee_black"
+            android:textSize="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/_80sdp"
+            android:layout_gravity="center_horizontal"
+            android:text="child items"/>
+
+        <CheckBox
+            android:id="@+id/fragment_filter_child_check_box"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/custom_check_box"
+            android:clickable="true"
+            android:focusable="true"
+            android:checked="false"
+            />
+
+    </LinearLayout>
+</LinearLayout>

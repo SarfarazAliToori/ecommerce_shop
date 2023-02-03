@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+   >
+
+<LinearLayout
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="@dimen/_50sdp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/_30sdp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/drawer_facbook_icon"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:src="@drawable/facebook_drawer_icon"
+        app:tint="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/drawer_instagram_icon"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:src="@drawable/instagram_drawer_icon"
+        app:tint="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/drawer_twitter_icon"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:src="@drawable/twitter_drawer_icon"
+        app:tint="@color/white"
+        />
+
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.settings.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/red">
+
+        <TextView
+            android:id="@+id/fragment_setting_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:layout_weight="@integer/material_motion_duration_short_1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/fragment_setting_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/fragment_setting_promotion_banner_iv"
+        layout="@layout/promotions_banner"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/want_to_receive_push_status"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:maxLines="2"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end">
+
+            <CheckBox
+                android:id="@+id/fragment_setting_order_status_notification"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical|end"
+                android:button="@null"
+                android:background="@drawable/custom_check_box"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/want_to_receive_push_new_promotions"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:maxLines="2"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end">
+
+            <CheckBox
+                android:id="@+id/fragment_setting_notification_for_new_promotions"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical|end"
+                android:button="@null"
+                android:background="@drawable/custom_check_box"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/want_to_receive_push_new_products"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:maxLines="2"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end">
+
+            <CheckBox
+                android:id="@+id/fragment_setting_notification_for_new_products"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical|end"
+                android:button="@null"
+                android:background="@drawable/custom_check_box"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="@color/black"/>
+
+</LinearLayout>

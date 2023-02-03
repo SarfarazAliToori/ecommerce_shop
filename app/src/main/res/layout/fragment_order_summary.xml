@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.order.orderSummary.OrderSummaryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/red">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/fragment_profile_back_iv"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:src="@drawable/md_nav_back"/>-->
+
+        <TextView
+            android:id="@+id/fragment_orderSummary_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Order Summary"
+            android:layout_weight="@integer/material_motion_duration_short_1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/fragment_profile_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/promotions_banner"
+        android:id="@+id/fragment_order_summary_ads_id"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_id"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/fragment_order_summar_order_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_127890"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="end"
+                    android:textColor="@color/smoky_gray"
+                    android:textSize="@dimen/_16sdp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_address"
+                android:textSize="@dimen/_18sdp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/fragment_order_summar_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:textColor="@color/shopee_black"
+                android:text="@string/lorem_ipsum_text2"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_order_summary_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                tools:listitem="@layout/order_summary_list_items_view"
+                />
+
+            <LinearLayout
+                android:id="@+id/fragment_order_summary_note_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/fragment_order_summar_note_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum_text2"
+                    android:textColor="@color/shopee_black"
+                    android:fontFamily="@font/myriad_pro_regular"
+                    android:textSize="@dimen/_14sdp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/red"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/payment_summary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/smoky_gray"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/sub_total"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/smoky_gray"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/_2400_00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/smoky_gray"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/discount"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/smoky_gray"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/_200_00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/smoky_gray"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/delivery_fee"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/smoky_gray"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/_300_00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/red"
+                    android:text="@string/total"/>
+
+                <TextView
+                    android:id="@+id/fragment_order_summar_total_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"
+                    android:text="@string/_2500_00"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

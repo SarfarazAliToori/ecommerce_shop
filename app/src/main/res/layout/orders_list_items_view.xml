@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/order_list_items_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:visibility="visible"
+            android:text="@string/today"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cart_list_items_view_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_5sdp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cart_list_items_view_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_id"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/orders_list_items_view_order_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_127890"
+                        android:textColor="@color/smoky_gray"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/orders_list_items_view_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inprogress"
+                        android:textColor="@color/smoky_gray"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:gravity="end|center_vertical"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/orders_list_items_view_total_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_items_03"
+                        android:textColor="@color/smoky_gray"
+                        android:fontFamily="@font/myriad_pro_regular"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rs"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_16sdp"/>
+
+                        <TextView
+                            android:id="@+id/orders_list_items_view_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_2500_00"
+                            android:textColor="@color/smoky_gray"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="@dimen/_16sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/products_items_view_cardview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_9sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardMaxElevation="@dimen/_5sdp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/promotions_list_items_view_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Break Gear"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="@dimen/_16sdp"/>
+
+                <TextView
+                    android:id="@+id/promotions_list_items_view_short_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="Toyota Engine Parts"
+                    android:textSize="@dimen/_12sdp"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/promotions_list_items_view_old_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="RS,800"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_16sdp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textColor="@color/red"
+                            android:text="RS,"/>
+
+                        <TextView
+                            android:id="@+id/promotions_list_items_view_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_16sdp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textColor="@color/black"
+                            android:text="800"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/custome_border"
+                android:padding="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/promotions_list_items_view_image"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/promotion_layer"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

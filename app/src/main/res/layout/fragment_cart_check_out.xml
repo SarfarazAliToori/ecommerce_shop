@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.cart.cartCheckOut.CartCheckOutFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/red">
+
+        <TextView
+            android:id="@+id/fragment_cart_check_out_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cart Out"
+            android:layout_weight="@integer/material_motion_duration_short_1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/promotions_banner"
+                android:id="@+id/fragment_cart_check_out_ads_id"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="Delivery Address"/>
+
+                <EditText
+                    android:id="@+id/fragment_cart_check_out_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:ems="10"
+                    android:padding="@dimen/_10sdp"
+                    android:hint="@string/address"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start|top"
+                    android:background="@drawable/rectangle_border"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_marginTop="20dp"
+                    android:text="Payment Method"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/fragment_cart_check_out_cash_on_delivery"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical|start"
+                        android:button="@null"
+                        android:background="@drawable/custom_check_box"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:checked="false"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Cash on Delivery"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/fragment_cart_check_out_strip"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical|start"
+                        android:button="@null"
+                        android:background="@drawable/custom_check_box"
+                        android:clickable="true"
+                        android:focusable="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Strip"/>
+
+                    <TextView
+                        android:id="@+id/fragment_order_check_out_card_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text=""/>
+
+                </LinearLayout>
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/red"-->
+<!--                    android:textSize="@dimen/_18sdp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:text="Add a note"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/fragment_cart_check_out_add_a_note"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:ems="10"-->
+<!--                    android:padding="@dimen/_10sdp"-->
+<!--                    android:hint="Add a note."-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:gravity="start|top"-->
+<!--                    android:background="@drawable/rectangle_border"-->
+<!--                    android:inputType="text" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Summary"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_18sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sub Total"/>
+
+                    <TextView
+                        android:id="@+id/fragment_cart_check_out_subtotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="00.00"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discount"/>
+
+                    <TextView
+                        android:id="@+id/fragment_cart_check_out_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="00.00"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Fee"/>
+
+                    <TextView
+                        android:id="@+id/fragment_cart_check_out_delivery_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="00.00"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_18sdp"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_marginTop="10dp"
+                        android:text="Total"/>
+
+                    <TextView
+                        android:id="@+id/fragment_cart_check_out_total_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:textSize="@dimen/_18sdp"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_marginTop="10dp"
+                        android:text="00.00"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_cart_check_out_place_order"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/red">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="Place Order"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

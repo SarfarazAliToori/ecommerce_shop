@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.signUp.SignUpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fragment_sign_up_back_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_14sdp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/red"
+                        android:gravity="bottom"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textSize="@dimen/_18sdp"
+                        android:text="@string/sign_up" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/sign_up_screen_logo"
+                        android:layout_gravity="end"
+                        app:tint="@color/red" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/red"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/fragment_sign_up_name_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:backgroundTint="@color/shopee_dark_gray"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                android:hint="@string/jawad"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/red"
+                android:text="@string/last_name" />
+
+            <EditText
+                android:id="@+id/fragment_sign_up_last_name_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:backgroundTint="@color/shopee_dark_gray"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                android:hint="@string/aslam"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/red"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/fragment_sign_up_email_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/shopee_dark_gray"
+                android:fontFamily="@font/open_sans_semibold"
+                android:hint="@string/jawad_autofit_com"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/red"
+                android:text="@string/phone" />
+
+            <EditText
+                android:id="@+id/fragment_sign_up_phone_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                android:hint="@string/_091348388"
+                android:backgroundTint="@color/shopee_dark_gray"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/red"
+                android:text="@string/address" />
+
+            <EditText
+                android:id="@+id/fragment_sign_up_address_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                 android:backgroundTint="@color/shopee_dark_gray"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                android:hint="@string/house_611_abc_road_lahore"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/red"
+                android:text="@string/password" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fragment_sign_up_password_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/shopee_dark_gray"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:hint="@string/confirm_password1"/>
+
+                <ImageView
+                    android:id="@+id/fragment_sign_up_show_hide_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/show_pass_icon"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:contentDescription="@null"
+                    app:tint="@color/red"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textColor="@color/red"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/confirm_password" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fragment_sign_up_confirm_password_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/shopee_dark_gray"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:hint="@string/confirm_password1"/>
+
+                <ImageView
+                    android:id="@+id/fragment_sign_up_confirm_pass_show_hide_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/show_pass_icon"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:contentDescription="@null"
+                    app:tint="@color/red"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/red"
+                android:text="@string/heard_about_us_from" />
+
+            <Spinner
+                android:id="@+id/fragment_sign_up_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tooltipText="Friends"
+                android:backgroundTint="@color/shopee_dark_gray"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/shopee_dark_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/red"
+                android:text="@string/reference_name" />
+
+            <EditText
+                android:id="@+id/fragment_sign_up_reference_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/shopee_dark_gray"
+                android:hint="@string/ali"/>
+
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/fragment_sign_up_checkbox"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/red"-->
+<!--                android:text="Is Vendore"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="start">
+
+                <CheckBox
+                    android:id="@+id/fragment_sign_up_is_vendor_check_box"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical|end"
+                    android:button="@null"
+                    android:background="@drawable/custom_check_box"
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/is_vendore"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_sign_up_singUp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@color/red">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:layout_gravity="center"
+                    android:text="Sign Up"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

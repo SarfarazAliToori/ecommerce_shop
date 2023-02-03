@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".view.fragments.promotionDetail.PromotionDetailsFragment">
+
+    <include
+        android:id="@+id/fragment_promotions_promotion_details_banner_iv"
+        layout="@layout/promotions_banner"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="3dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/fragment_promotions_detail_image_iv"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_200sdp"-->
+<!--                android:background="@color/white"-->
+<!--                android:src="@drawable/promotion_layer"-->
+<!--                android:padding="10dp"-->
+<!--                android:contentDescription="promo image" />-->
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/fragment_promotions_detail_image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                app:iss_auto_cycle="true"
+                app:iss_period="1000"
+                android:background="@color/white"
+                app:iss_selected_dot="@drawable/md_transparent"
+                app:iss_unselected_dot="@drawable/md_transparent"
+                app:iss_delay="0"/>
+
+            <TextView
+                android:id="@+id/fragment_promotions_detail_heading_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Promotion"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="@dimen/_22sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/fragment_promotions_detail_description_heading_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Honda Engine Parts"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:id="@+id/fragment_promotions_detail_detail_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:textColor="@color/black"
+                android:text="Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/fragment_promotions_detail_add_to_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/cart_red"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="@string/add_to_cart"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fragment_promotions_detail_old_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="RS,1800"
+                        android:textSize="@dimen/_14sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                       />
+
+                    <TextView
+                        android:id="@+id/fragment_promotions_detail_new_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RS,1800"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:paddingStart="15dp"/>
+
+                </LinearLayout>
+
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:gravity="end"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="RS,"-->
+                <!--                        android:textStyle="bold"-->
+                <!--                        android:textColor="@color/red"-->
+                <!--                        android:textSize="25dp"-->
+                <!--                        android:paddingStart="15dp"/>-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/fragment_promotions_discount_price_tv"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="1800"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:paddingEnd="15dp"-->
+                <!--                        android:textStyle="bold"-->
+                <!--                        android:textSize="25dp"-->
+                <!--                        android:paddingStart="15dp"/>-->
+
+                <!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/adsHomeFragment">
+    <fragment
+        android:id="@+id/adsHomeFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.adsHome.AdsHomeFragment"
+        android:label="ShopE"
+        tools:layout="@layout/fragment_ads_home" >
+        <action
+            android:id="@+id/action_adsHomeFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/promotionsFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.promotionsList.PromotionsListFragment"
+        android:label="Promotions"
+        tools:layout="@layout/fragment_promotions" >
+        <action
+            android:id="@+id/action_promotionsFragment_to_promotionDetailsFragment"
+            app:destination="@id/promotionDetailsFragment" />
+        <action
+            android:id="@+id/action_promotionsFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/brandsFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.brands.BrandsFragment"
+        android:label="Brands"
+        tools:layout="@layout/fragment_brands" >
+        <action
+            android:id="@+id/action_brandsFragment_to_brandDetailFragment1"
+            app:destination="@id/brandDetailFragment" />
+        <action
+            android:id="@+id/action_brandsFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.products.ProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_productsFragment_to_productsDetailFragment"
+            app:destination="@id/productsDetailFragment" />
+        <action
+            android:id="@+id/action_productsFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.contactUs.ContactUsFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/rateUsFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.rateUs.RateUsFragment"
+        android:label="Rate Us"
+        tools:layout="@layout/fragment_rate_us" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/promotionDetailsFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.promotionDetail.PromotionDetailsFragment"
+        android:label="Promotion Details"
+        tools:layout="@layout/fragment_promotion_details" >
+        <argument
+            android:name="promotion_data"
+            app:argType="com.acclivousbyte.shopee.models.promotionList.PromotionData" />
+        <action
+            android:id="@+id/action_promotionDetailsFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_cartCheckOutFragment"
+            app:destination="@id/cartCheckOutFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.wishlist.WishListFragment"
+        android:label="Wishlist"
+        tools:layout="@layout/fragment_wish_list" >
+        <action
+            android:id="@+id/action_wishListFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_wishListFragment_to_productsDetailFragment"
+            app:destination="@id/productsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/orderListingFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.order.orderListing.OrderListingFragment"
+        android:label="Order List"
+        tools:layout="@layout/fragment_order_listing" >
+        <action
+            android:id="@+id/action_orderListingFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.order.orderDetails.OrderDetailsFragment"
+        android:label="Order Details"
+        tools:layout="@layout/fragment_order_details" />
+    <fragment
+        android:id="@+id/cartCheckOutFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.cart.cartCheckOut.CartCheckOutFragment"
+        android:label="Check Out"
+        tools:layout="@layout/fragment_cart_check_out" >
+        <action
+            android:id="@+id/action_cartCheckOutFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.order.orderSummary.OrderSummaryFragment"
+        android:label="Order Summary"
+        tools:layout="@layout/fragment_order_summary" >
+        <argument
+            android:name="orderSummaryData"
+            app:argType="com.acclivousbyte.shopee.models.placeOrder.OrderSummaryData" />
+        <argument
+            android:name="address_string"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/brandDetailFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.brandsDetail.BrandDetailFragment"
+        android:label="Brands Details"
+        tools:layout="@layout/fragment_brand_detail" >
+        <argument
+            android:name="brands_details"
+            app:argType="com.acclivousbyte.shopee.models.brands.BrandsDetails" />
+        <action
+            android:id="@+id/action_brandDetailFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsDetailFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.products.ProductsDetailFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_products_detail" >
+        <action
+            android:id="@+id/action_productsDetailFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <argument
+            android:name="product_list_data"
+            app:argType="com.acclivousbyte.shopee.models.productsList.ProductsListData" />
+        <action
+            android:id="@+id/action_productsDetailFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.webView.WebViewFragment"
+        android:label="Ads"
+        tools:layout="@layout/fragment_web_view">
+        <argument
+            android:name="adsUrl"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.filter.FilterFragment"
+        android:label="Filters"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.signIn.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment2"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPasswordFragment2"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.signUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.acclivousbyte.shopee.view.fragments.forgotPassword.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+
+</navigation>

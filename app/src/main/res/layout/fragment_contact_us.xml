@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.contactUs.ContactUsFragment">
+
+    <include
+        android:id="@+id/fragment_contact_us_promotion_banner_iv"
+        layout="@layout/promotions_banner"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/contact_us_img"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:contentDescription="@string/contact_us_image"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email1"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/open_sans_regular"
+        android:textColor="@color/red"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="15sp"/>
+
+    <TextView
+        android:id="@+id/fragment_contact_us_email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jawad_autofit_com"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="@dimen/_14sdp"
+        android:paddingStart="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone1"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/open_sans_regular"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/fragment_contact_us_phone_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0423_8756028"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="@dimen/_14sdp"
+        android:paddingStart="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/open_sans_regular"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/fragment_contact_us_mobile_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0300_8756028"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="@dimen/_14sdp"
+        android:paddingStart="@dimen/_10sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fragment_contact_us_twitter_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/twitter"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/fragment_contact_us_facebook_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/facebook"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/fragment_contact_us_insta_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/instagram"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/fragment_contact_us_bee_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/bee"
+            android:contentDescription="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>
